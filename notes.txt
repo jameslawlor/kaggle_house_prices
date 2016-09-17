@@ -1,0 +1,103 @@
+NaN Clean
+LotFrontage > Set to Zero
+Alley > 3rd Cat set to a string "None"
+MasVnrType > Map nans to already existing "None" cat
+MasVnrArea > Map nans to median of "None" cat
+BsmtQual > Map to a str "None" category
+BsmtCond > Same again
+BsmtExposure > Same
+BsmtFinType1 > same
+BsmtFinType2 > same
+Electrical > Only one NAN, map to Median category
+FireplaceQu > Change to "None"
+GarageType > "None"
+GarageYrBlt > Set to -100
+GarageFinish > "None"
+GarageQual > "None"
+PoolQC > "None"
+Fence > "None"
+MiscFeature > "None"
+
+Cats
+MSZoning
+Street
+LotShape
+LandContour
+Utilities
+LotConfig
+LandSlope
+Neighbourhood (25 Cats)
+Condition1
+Condition2
+BldgType
+HouseStyle
+RoofStyle
+RoofMat1
+Exterior1st
+Exterior2nd
+MasVnrType
+ExterQual
+ExterCond
+Foundation
+BsmtQual
+BsmtCond
+BsmtExposure
+BsmtFinType1
+BsmtFinType2
+Heating
+HeatingQC
+CentralAir
+Electrical
+KitchenQual 
+Functional
+FireplaceQu 
+GarageType > Consider changing to Y or N?
+GarageFinish
+GarageQual > Band into None, Bad, Good?
+GarageCond > Same
+PavedDrive 
+PoolQC
+Fence
+MiscFeature 
+SaleType > 9 Categories, consider changing to 3
+SaleCondition 
+
+Int
+MSSubClass > Convert to Str Category
+LotArea > Take log then Normalise?
+OverallQual > Rating out of 10, Maybe 'band' into 2-3 groups?
+OverallCond > same as above
+YearBuilt > Same again!
+YearRemodAdd > Same...
+BsmtFinSF1 > convert float, log, normalise 
+BsmtFinSF2 > convert float, log, normalise
+BsmtUnfSF  > Same
+TotalBsmtSF > Same
+1stFlrSF > Same
+2ndFlrSF > Same
+LowQualFinSF > Only 24 uniques and no nans, consider banding
+GrLivArea > float, log, normalise
+BsmtFullBath > Only 4 uniques, make into categorys
+BsmtHalfBath > Same
+FullBath > Same
+HalfBath > Same
+BedroomAbvGr 
+TotRmsAbvGrd > 12 uniques, consider banding
+Fireplaces > 4 uniques, convert into Y or N?
+GarageYrBlt > Banding?
+GarageCars > Band into 0, 1-2, 3-4
+GarageArea > float, log, normalise
+WoodDeckSF > float, log, normalise
+OpenPorchSF > Same
+EnclosedPorch > Same
+3SsnPorch > Band
+ScreenPorch > Band
+PoolArea > Band? Only 8 uniques
+MiscVal > Normalise
+MoSold > Month sold, categorise into Season?
+YrSold > 5 Uniques 2006-2010, Make into 5 categories
+KitchenAbvGr 
+
+Float
+LotFrontage
+MasVnrArea
